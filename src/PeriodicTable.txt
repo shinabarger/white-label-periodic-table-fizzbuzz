@@ -1,18 +1,3 @@
------------------------------
-THESE ARE THE INSTRUCTIONS:
-
-
-The IUPAC Periodic Table of the Elements is one of the most recognizable features of modern chemistry -
-the organization of all known chemical elements along with some of their most fundamental properties,
-together with their names and symbols. Today we're going to use that as we spell some words.
-
-Here's the list of the elements alphabetized by the element's name.
-
-We can also see the symbol
-(1 or 2 letters - we're omitting the emerging elements that often contain three letters),
-atomic number and weight, and Pauling Electronegativities (c), which are unused in this challenge.
-
-Element	Symbol	Z	Atomic Weight	c
 Actinium	Ac	89	(227)	1.1
 Aluminum	Al	13	26.9815	1.5
 Americium	Am	95	(243)	1.3
@@ -117,39 +102,3 @@ Ytterbium	Yb	70	173.04	1.1
 Yttrium	    Y	39	88.9059	1.2
 Zinc	    Zn	30	65.38	1.6
 Zirconium	Zr	40	91.22	1.4
-
-_________________________________________
-
-Input Description
-
-You'll be given a list of words, one per line. Example:
-
-genius
-
-Output Description
-
-Your program should emit the word as a series of elements by name with proper capitalization from the above table. Example:
-GeNiUS (germanium nickel uranium sulfur)
-
-Challenge Input
-
-functions
-bacon
-poison
-sickness
-ticklish
-
-Challenge Output
-
-FUNCTiONS (flourine, uranium, nitrogen, carbon, titanium, oxygen, nitrogen, sulfur)
-BaCoN (barium, cobalt, nitrogen)
-POISON (phosphorus, oxygen, iodine, sulfur, oxygen, nitrogen)
-SiCKNeSS (silicon, carbon, potassium, neon, sulfur, sulfur)
-TiCKLiSH (titanium, carbon, potassium, lithium, sulfur, hydrogen)
-
-Bonus
-
-Note that bacon has a few different possibilities. Which is the heaviest by atomic weight?
-
-
--

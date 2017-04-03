@@ -5,4 +5,6 @@ public class Main {
         return "buzz";
 
     }
+
+    //TODO parse data from periodictable.txt and put it into an arrayList 
 }
