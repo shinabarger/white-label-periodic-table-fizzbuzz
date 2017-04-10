@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e069dd93-c878-4b59-a3a3-d00e72ef966a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/White-Label-FizzBuzz-1/Main.class" afterPath="$PROJECT_DIR$/out/production/White-Label-FizzBuzz-1/Main.class" />
+    <list default="true" id="e069dd93-c878-4b59-a3a3-d00e72ef966a" name="Default" comment="Refactor methods, remove basic test setup, create basic method to turn one or two letter words into the symbol in the periodic table, created a few junit tests, refactored variable names for better readability">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/White-Label-FizzBuzz-1/MainTest.class" afterPath="$PROJECT_DIR$/out/production/White-Label-FizzBuzz-1/MainTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainTest.java" afterPath="$PROJECT_DIR$/src/MainTest.java" />
@@ -21,11 +21,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="README_INSTRUCTIONS" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/README_INSTRUCTIONS">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="133" column="15" lean-forward="true" selection-start-line="133" selection-start-column="15" selection-end-line="133" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="51" column="85" lean-forward="false" selection-start-line="51" selection-start-column="85" selection-end-line="51" selection-end-column="85" />
+            <state relative-caret-position="378">
+              <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -33,21 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README_INSTRUCTIONS" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/README_INSTRUCTIONS">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2394">
-              <caret line="133" column="15" lean-forward="true" selection-start-line="133" selection-start-column="15" selection-end-line="133" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MainTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/MainTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="599">
+              <caret line="40" column="50" lean-forward="true" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,6 +63,11 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -238,6 +243,27 @@
     <property name="extract.method.default.visibility" value="public" />
   </component>
   <component name="RunManager" selected="JUnit.MainTest">
+    <configuration default="false" name="MainTest.conBecomeCON" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="White-Label-FizzBuzz-1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" value="conBecomeCON" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
     <configuration default="false" name="MainTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="White-Label-FizzBuzz-1" />
@@ -245,11 +271,32 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="" />
+      <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="MainTest.genBecomesGeN" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="White-Label-FizzBuzz-1" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MainTest" />
+      <option name="METHOD_NAME" value="genBecomesGeN" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
       <option name="TEST_SEARCH_SCOPE">
@@ -288,48 +335,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MainTest" />
       <option name="METHOD_NAME" value="doesnobecomeNo" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="MainTest.doesinbecomeIn" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="White-Label-FizzBuzz-1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="doesinbecomeIn" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="MainTest.conBecomeCoN" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="White-Label-FizzBuzz-1" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MainTest" />
-      <option name="METHOD_NAME" value="conBecomeCoN" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -745,19 +750,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.Unnamed" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.MainTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.MainTest.doesLetterBGetCapitalized" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.MainTest.doesnobecomeNo" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.MainTest.doesinbecomeIn" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.MainTest.conBecomeCoN" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.MainTest.conBecomeCON" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.MainTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.MainTest.genBecomesGeN" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.MainTest.doesLetterBGetCapitalized" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.MainTest.doesnobecomeNo" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="JUnit.MainTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.MainTest.conBecomeCoN" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.MainTest.doesinbecomeIn" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.MainTest.doesnobecomeNo" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.MainTest.doesLetterBGetCapitalized" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.MainTest.doesLetterBGetCapitalized" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.MainTest.doesnobecomeNo" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.MainTest.genBecomesGeN" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.MainTest.conBecomeCON" />
       </list>
     </recent_temporary>
   </component>
@@ -772,44 +777,52 @@
       <option name="presentableId" value="Default" />
       <updated>1491222991778</updated>
       <workItem from="1491222993866" duration="4215000" />
-      <workItem from="1491837321043" duration="4084000" />
+      <workItem from="1491837321043" duration="12466000" />
     </task>
+    <task id="LOCAL-00001" summary="Refactor methods, remove basic test setup, create basic method to turn one or two letter words into the symbol in the periodic table, created a few junit tests, refactored variable names for better readability">
+      <created>1491841485512</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1491841485512</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest - 2017.04.10 at 12h 19m 12s.xml">
+    <history-entry file="MainTest - 2017.04.10 at 15h 13m 18s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2017.04.10 at 12h 20m 46s.xml">
+    <history-entry file="MainTest - 2017.04.10 at 15h 15m 45s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2017.04.10 at 12h 21m 52s.xml">
+    <history-entry file="MainTest - 2017.04.10 at 15h 17m 35s.xml">
       <configuration name="MainTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest - 2017.04.10 at 12h 22m 56s.xml">
-      <configuration name="MainTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_conBecomeCoN - 2017.04.10 at 12h 19m 09s.xml">
-      <configuration name="MainTest.conBecomeCoN" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_conBecomeCoN - 2017.04.10 at 12h 19m 23s.xml">
-      <configuration name="MainTest.conBecomeCoN" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_conBecomeCoN - 2017.04.10 at 12h 21m 02s.xml">
-      <configuration name="MainTest.conBecomeCoN" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_doesLetterBGetCapitalized - 2017.04.10 at 12h 19m 16s.xml">
+    <history-entry file="MainTest_doesLetterBGetCapitalized - 2017.04.10 at 15h 12m 21s.xml">
       <configuration name="MainTest.doesLetterBGetCapitalized" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest_doesinbecomeIn - 2017.04.10 at 12h 19m 20s.xml">
-      <configuration name="MainTest.doesinbecomeIn" configurationId="JUnit" />
+    <history-entry file="MainTest_doesLetterBGetCapitalized - 2017.04.10 at 15h 12m 55s.xml">
+      <configuration name="MainTest.doesLetterBGetCapitalized" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MainTest_doesnobecomeNo - 2017.04.10 at 12h 19m 18s.xml">
+    <history-entry file="MainTest_doesLetterBGetCapitalized - 2017.04.10 at 15h 16m 26s.xml">
+      <configuration name="MainTest.doesLetterBGetCapitalized" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_doesLetterBGetCapitalized - 2017.04.10 at 15h 17m 06s.xml">
+      <configuration name="MainTest.doesLetterBGetCapitalized" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_doesLetterBGetCapitalized - 2017.04.10 at 15h 17m 19s.xml">
+      <configuration name="MainTest.doesLetterBGetCapitalized" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_doesnobecomeNo - 2017.04.10 at 15h 15m 50s.xml">
       <configuration name="MainTest.doesnobecomeNo" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MainTest_genBecomesGeN - 2017.04.10 at 15h 14m 33s.xml">
+      <configuration name="MainTest.genBecomesGeN" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8299000" />
+    <option name="totallyTimeSpent" value="16681000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="1023" extended-state="6" />
@@ -826,7 +839,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34505495" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32197803" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -853,8 +866,14 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Refactor methods, remove basic test setup, create basic method to turn one or two letter words into the symbol in the periodic table, created a few junit tests, refactored variable names for better readability" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor methods, remove basic test setup, create basic method to turn one or two letter words into the symbol in the periodic table, created a few junit tests, refactored variable names for better readability" />
+  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="6" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1131,26 +1150,26 @@
     <entry file="file://$PROJECT_DIR$/src/Run.java" />
     <entry file="file://$PROJECT_DIR$/src/README_INSTRUCTIONS">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2394">
+        <state relative-caret-position="234">
           <caret line="133" column="15" lean-forward="true" selection-start-line="133" selection-start-column="15" selection-end-line="133" selection-end-column="15" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainTest.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="378">
+          <caret line="51" column="16" lean-forward="false" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="51" column="85" lean-forward="false" selection-start-line="51" selection-start-column="85" selection-end-line="51" selection-end-column="85" />
+        <state relative-caret-position="599">
+          <caret line="40" column="50" lean-forward="true" selection-start-line="40" selection-start-column="50" selection-end-line="40" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

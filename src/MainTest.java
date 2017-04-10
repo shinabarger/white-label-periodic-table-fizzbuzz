@@ -18,7 +18,7 @@ public class MainTest {
     @Test
     public void doesnobecomeNo() throws Exception {
         String actual = Main.main("no");
-        String expected = "No";
+        String expected = "NO";
         Assert.assertEquals(expected, actual);
 
     }
@@ -26,15 +26,21 @@ public class MainTest {
     @Test
     public void doesinbecomeIn() throws Exception {
         String actual = Main.main("in");
-        String expected = "In";
+        String expected = "IN";
         Assert.assertEquals(expected, actual);
 
     }
     @Test
-    //TODO make this work
-    public void conBecomeCoN() throws Exception {
+    public void conBecomeCON() throws Exception {
         String actual = Main.main("con");
-        String expected = "CoN";
+        String expected = "CON";
+        Assert.assertEquals(expected, actual);
+
+    }
+    @Test
+    public void genBecomesGeN() throws Exception {
+        String actual = Main.main("gen");
+        String expected = "GeN";
         Assert.assertEquals(expected, actual);
 
     }

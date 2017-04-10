@@ -36,24 +36,30 @@ public class Main {
     }
 
     private static String getOutputString(String inputWord, List<String> periodicSymbols) {
-        String wordOutput = null;
+
+        int inputWordLength = inputWord.length();
+        StringBuilder wordOutput = new StringBuilder(inputWordLength);
+        int beginningOfSubstring = 0;
+        String currentWordSection = inputWord.substring(beginningOfSubstring, beginningOfSubstring + 1);
+
         for (int i = 0; i < 104; i++) {
-            String capitalizedInputWord = inputWord.toUpperCase();
+
             String currentPeriodicElement = periodicSymbols.get(i);
 
-            if(capitalizedInputWord.length() <=2) {
+            if (currentWordSection.equalsIgnoreCase(currentPeriodicElement)) {
+                wordOutput.append(currentPeriodicElement);
 
-                if (periodicSymbols.contains(capitalizedInputWord)) {
-                    wordOutput = capitalizedInputWord;
-                } else if (currentPeriodicElement.equalsIgnoreCase(capitalizedInputWord)) {
-                    wordOutput = currentPeriodicElement;
+                if (beginningOfSubstring < (inputWordLength - 1)) {
+                    beginningOfSubstring = beginningOfSubstring + 1;
+                    currentWordSection = inputWord.substring(beginningOfSubstring, beginningOfSubstring + 1);
                 }
             }
-            //TODO add section if the word input from user is longer than two letters
 
         }
-        return wordOutput;
+
+        return wordOutput.toString();
 
     }
+
 }
 
